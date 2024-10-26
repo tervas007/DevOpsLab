@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '3b4ae7d2-3036-4929-8752-673ee58ff11b'
   imageRepository: 'mylabdevops'
   containerRegistry: 'azurelab.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
